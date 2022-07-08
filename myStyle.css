@@ -1,0 +1,263 @@
+
+
+/* Universal selector for all myStyle.css */
+
+*{
+	box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* selector for all body */
+body{
+	margin: 0;
+  font-family: "poppins",sans-serif;
+  /* Horizonatl scroll enabled*/
+   overflow-x: hidden;
+}
+
+/* NavBar*/
+.navbar ul{
+padding:10px;
+margin: 0px;
+list-style: none;
+background-color:gray; 
+display: flex;
+justify-content: center;
+/* Smoothly hover*/
+
+
+}
+
+.navbar ul li{
+	/* NOt working in padding as well as margin*/
+	display: inline-block;
+	
+}
+/* utilites */
+/* Group Selector */
+h1,h5,h4,p{
+
+	margin: 0;
+}
+.bg__dark{
+background-color: black;
+
+width: 100%;
+height: auto;
+margin: 0;
+
+
+}
+.text__light{
+	
+
+	margin: 0;
+	
+}
+.text__light:hover{
+	color: green;
+}
+.bg__black{
+	
+	color: rgba(0,0,0,0.7);;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.btn__dark{
+
+	background-color:gray;
+
+
+     margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+
+	max-width: 100%;
+	height: auto;	
+	
+	
+	
+	color: orange;
+	padding: 15px 20px;
+	border-radius: 20px;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	letter-spacing: 2px;
+}
+
+.btn__dark:hover{
+	color:blue;
+}
+
+.image__responsive{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: orange;
+	text-transform: uppercase;
+	padding: 15px 20px;
+	font-size: 13px;
+	letter-spacing: 2px;
+	
+}
+
+
+.navbar ul li a:hover{
+	color: blue;
+}
+
+
+
+             /*hero Section*/
+.hero__section{
+display: flex;
+/* justify-content is used to all  it display center */
+justify-content: center;
+/* align_center div ky center ma kr dye gya  */
+align-items: center;
+
+
+max-width: 100%
+height:auto;
+height: 85vh;
+/* Smoothly hover*/
+transition: all 0.4s;
+
+background-image:linear-gradient(#f4511e,#f4511e),url("4.png");
+background-size: cover;
+/* used as photoshop mixtureof image and background color*/
+background-blend-mode: multiply;
+text-transform: uppercase;
+}
+.hero__text{
+	color: white;
+
+}
+.hero__text h1{
+
+	font-size: 100px;
+	font-weight: 500px;
+  text-align: center;
+
+}
+.hero__text p{
+letter-spacing: 6px;
+
+}
+
+
+/* Recepie Section*/
+.receipe__section{
+padding: 70px 0px;
+
+}
+.image__wraper img {
+	/* there properties are used to responsive the image given below */
+	width: 100%;
+	max-width:100%;
+	height: 100%;
+	height: auto;
+/* image Smothy move Ho*/
+transition: all 0.4s;
+
+}
+.image__wraper{
+	position: relative;
+	
+	max-width: 100%;
+	background-color: red;
+	/* image does not over flow*/
+	overflow: hidden;
+	border-radius: 10px; 
+
+}
+.image__wraper-text{
+	padding: 0 15px;
+	max-height: 150px;
+	position: absolute;
+	background-color: black;
+	color: white;
+	width: 100%;
+	max-width: 100%;
+     bottom:0px;
+     text-align: center;
+/* tranparency black colour  we used rgba */
+background-color: rgba(0,0,0,0.7);
+}
+.image__wraper-text h5{
+	color: orange;
+}
+.image__wraper-text p{
+	line-height: 26px;
+}
+.image__wraper img:hover{
+	cursor: pointer;
+	transform: scale(1.2,1.2);
+}
+
+/* About Section*/
+.about__section{
+
+	background-color: red;
+	padding: 70px 0px;
+color: white;
+}
+.about__section h4{
+	font-size: 28px;
+	font-weight: 500px;
+
+}
+
+.about__section p{
+	line-height: 36px;
+	font-weight: 100;
+	
+
+}
+.image__background img {
+	border-radius: 26px;
+}
+
+/* Extra section*/
+.extra__section{
+	padding: 70px 0px;
+}
+.extra__section h4{
+	font-size: 26px;
+	font-weight: 500;
+}
+/*Subscribe Section */
+.subscribe__section{
+	background-color: black;
+	padding: 70px 0px;
+color: white;
+}
+.subscribe__section form{
+	display: flex;
+}
+.subscribe__section button{
+	background-color: orange;
+	color: black;
+}
+/* category__section*/
+.category__section{
+
+padding: 70px 0px;	
+}
